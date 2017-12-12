@@ -1,11 +1,7 @@
 package udinsi.dev.customtoast;
 
 import android.content.Context;
-import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,10 +13,11 @@ import android.widget.Toast;
  * Created by Dede on 11/12/2017.
  */
 
-public abstract class CustomToast{
+public class CustomToast{
 
     public static Toast makeText(Context context, String message, int time){
-        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        LayoutInflater inflater = (LayoutInflater)
+                context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View layout = inflater.inflate(R.layout.custom_toast, null);
 
         TextView text = (TextView) layout.findViewById(R.id.text);
@@ -34,7 +31,8 @@ public abstract class CustomToast{
     }
 
     public static Toast makeText(Context context, String message, int time, int gravity){
-        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        LayoutInflater inflater = (LayoutInflater)
+                context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View layout = inflater.inflate(R.layout.custom_toast, null);
 
         TextView text = (TextView) layout.findViewById(R.id.text);
@@ -46,8 +44,10 @@ public abstract class CustomToast{
         return toast;
     }
 
-    public static Toast makeText(Context context, String message, int time, int gravity, int backgroundColor, int textColor){
-        LayoutInflater inflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+    public static Toast makeText(Context context, String message, int time, int gravity,
+                                 int backgroundColor, int textColor){
+        LayoutInflater inflater = (LayoutInflater)
+                context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View layout = inflater.inflate(R.layout.custom_toast, null);
 
         TextView text = (TextView) layout.findViewById(R.id.text);
