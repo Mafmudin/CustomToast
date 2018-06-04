@@ -1,9 +1,8 @@
-# CustomToast
+# Custom Toast
 
-Custom your toast
+buat toast dengan tampilan yang berbeda
 
-### Step 1. Add the JitPack repository to your build file
-#### Add it in your root build.gradle at the end of repositories:
+### langkah 1. tambahkan JitPack repository kedalam file ```build.gradle``` (root project)
 ```
 allprojects {
 	repositories {
@@ -12,28 +11,28 @@ allprojects {
 	}
 }
 ```
-### Step 2. Add the dependency
+### Langkah 2. tambahkan dependesi
 ```
 dependencies {
 	compile 'com.github.Mafmudin:CustomToast:v1.0'
 }
 ```
 
-#### How to use Custom Toast
-* i make it in 3 method you can use to build a custom toast
+#### cara menggunakan Custom Toast
+* custom toast dibuat dalam 3 metode yang dapat digunakan , yaitu:
 ```
 CustomToas.makeText(Context context, String message, int time).show();
 ```
-first method you can use with default theme of toast
+metode pertama digunakan seperti umumnya toast
 
 ```
 CustomToast.makeText(Context context, String message, int time, int gravity).show();
 ```
-2nd method you can use to add the gravity, it will move your toast follow the gravity value that you input in this method
+metode kedua, dapat ditambahkan gravity yang dapat digunakan untuk memindah posisi toas sesuai keinginan
 
 ```
 CustomToast.makeText(Context context, String message, int time, int gravity,
                                  int backgroundColor, int textColor).show();
 ```
-3th method, you can add text color and background color to your toast
+metode ketiga dapat mengubah warna tulisan dan warna latar
   
