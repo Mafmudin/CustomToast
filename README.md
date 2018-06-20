@@ -29,7 +29,8 @@ metode pertama digunakan seperti umumnya toast
 ```
 CustomToast.makeText(Context context, String message, int time, int gravity).show();
 ```
-metode kedua, dapat ditambahkan gravity yang dapat digunakan untuk memindah posisi toas sesuai keinginan
+
+metode kedua, dapat ditambahkan gravity yang dapat digunakan untuk memindah posisi toast sesuai keinginan
 
 ```
 CustomToast.makeText(Context context, String message, int time, int gravity,
