@@ -20,6 +20,7 @@ dependencies {
 
 #### cara menggunakan Custom Toast
 * custom toast dibuat dalam 3 metode yang dapat digunakan , yaitu:
+
 ```
 CustomToas.makeText(Context context, String message, int time).show();
 ```
